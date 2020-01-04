@@ -3,6 +3,11 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <AssemblyName>redmoon.presentation</AssemblyName>
+    <Authors>Popo-san</Authors>
+    <Company>Pneu Informatique</Company>
+    <Product>Red Moon Visual Novel - Presentation</Product>
+    <Copyright>Copyright © 2020 Pneu Informatique</Copyright>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

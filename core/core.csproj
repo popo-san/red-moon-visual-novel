@@ -1,7 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Popo-san</Authors>
+    <Company>Pneu Informatique</Company>
+    <Product>Red Moon Visual Novel - Core</Product>
+    <Copyright>Copyright © 2020 Pneu Informatique</Copyright>
+    <RepositoryUrl>https://github.com/pneu-informatique/red-moon-visual-novel</RepositoryUrl>
+    <AssemblyName>redmoon.core</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
