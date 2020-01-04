@@ -1,6 +1,7 @@
 ﻿using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using presentation.Views;
 using System;
 using System.Text;
 using Xamarin.Forms;
@@ -21,7 +22,7 @@ namespace presentation
 
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new TitlePage();
         
         }
 

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:resources="clr-namespace:presentation.Resources"
+             mc:Ignorable="d"
+             x:Class="presentation.Views.AboutPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{x:Static resources:PageTexts.ProjectTitle}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="{x:Static resources:PageTexts.ProjectCopyright}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="{x:Static resources:PageTexts.ProjectRepository}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnProjectRepositoryButtonClicked" />
+                <Button Text="{x:Static resources:PageTexts.ProjectLicense}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnProjectLicenseButtonClicked" />
+                <Button Text="{x:Static resources:PageTexts.Close}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnCloseButtonClicked" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
