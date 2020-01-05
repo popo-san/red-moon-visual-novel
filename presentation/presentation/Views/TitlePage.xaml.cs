@@ -19,19 +19,19 @@ namespace presentation.Views
             InitializeComponent();
         }
 
-        async void OnNewGameButtonClicked(object sender, EventArgs args)
+        void OnNewGameButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new NewGamePage());
+            Navigation.PushModalAsync(new NewGamePage());
         }
 
-        async void OnOpenGameButtonClicked(object sender, EventArgs args)
+        void OnOpenGameButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new SavedGameListPage());
+            Navigation.PushModalAsync(new SavedGameListPage());
         }
 
-        async void OnAboutButtonClicked(object sender, EventArgs args)
+        void OnAboutButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PushModalAsync(new AboutPage());
+            Navigation.PushModalAsync(new AboutPage());
         }
 
     }

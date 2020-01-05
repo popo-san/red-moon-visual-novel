@@ -9,12 +9,21 @@ using Xamarin.Forms.Xaml;
 
 namespace presentation.Views
 {
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GamePage : ContentPage
     {
+
         public GamePage()
         {
             InitializeComponent();
         }
+
+        void OnMenuButtonClicked(object sender, EventArgs args)
+        {
+            MenuPanel.IsVisible = true;
+        }
+
     }
+
 }

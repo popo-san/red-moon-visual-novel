@@ -19,18 +19,18 @@ namespace presentation.Views
             InitializeComponent();
         }
 
-        async void OnOKButtonClicked(object sender, EventArgs args)
+         void OnOKButtonClicked(object sender, EventArgs args)
         {
 
-            await Navigation.PopModalAsync();
+             Navigation.PopModalAsync();
 
-            await Navigation.PushModalAsync(new GamePage());
+             Navigation.PushModalAsync(new GamePage());
 
         }
 
-        async void OnCancelButtonClicked(object sender, EventArgs args)
+        void OnCancelButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+            Navigation.PopModalAsync();
         }
 
     }

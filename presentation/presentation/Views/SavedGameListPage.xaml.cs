@@ -9,12 +9,16 @@ using Xamarin.Forms.Xaml;
 
 namespace presentation.Views
 {
+
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SavedGameListPage : ContentPage
     {
+
         public SavedGameListPage()
         {
             InitializeComponent();
         }
+
     }
+
 }

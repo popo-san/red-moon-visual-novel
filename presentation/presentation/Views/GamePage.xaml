@@ -3,13 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:resources="clr-namespace:presentation.Resources"
              mc:Ignorable="d"
              x:Class="presentation.Views.GamePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="MenuButton" Text="{x:Static resources:PageTexts.Menu}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnMenuButtonClicked"  />
+                <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+            <AbsoluteLayout x:Name="MenuPanel" AbsoluteLayout.LayoutBounds="0,32,200,96" IsVisible="False">
+                <Button Text="11111"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                />
+                <Button Text="22222"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                />
+            </AbsoluteLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

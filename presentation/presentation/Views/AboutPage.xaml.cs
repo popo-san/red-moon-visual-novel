@@ -11,19 +11,19 @@ namespace presentation.Views
     public partial class AboutPage : ContentPage
     {
 
-        async void OnProjectRepositoryButtonClicked(object sender, EventArgs args)
+        void OnProjectRepositoryButtonClicked(object sender, EventArgs args)
         {
-            await Browser.OpenAsync(PageTexts.ProjectRepositoryUrl, BrowserLaunchMode.SystemPreferred);
+             Browser.OpenAsync(PageTexts.ProjectRepositoryUrl, BrowserLaunchMode.SystemPreferred);
         }
 
-        async void OnProjectLicenseButtonClicked(object sender, EventArgs args)
+       void OnProjectLicenseButtonClicked(object sender, EventArgs args)
         {
-            await Browser.OpenAsync(PageTexts.ProjectLicenseUrl, BrowserLaunchMode.SystemPreferred);
+             Browser.OpenAsync(PageTexts.ProjectLicenseUrl, BrowserLaunchMode.SystemPreferred);
         }
 
-        async void OnCloseButtonClicked(object sender, EventArgs args)
+        void OnCloseButtonClicked(object sender, EventArgs args)
         {
-            await Navigation.PopModalAsync();
+             Navigation.PopModalAsync();
         }
 
         public AboutPage()
