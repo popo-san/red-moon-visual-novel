@@ -21,7 +21,24 @@ namespace presentation.Views
 
         void OnMenuButtonClicked(object sender, EventArgs args)
         {
-            MenuPanel.IsVisible = true;
+            MenuPanel.FadeTo(1, 256);
+            MenuPanel.InputTransparent = false;
+        }
+
+        void OnPageClicked(object sender, EventArgs args)
+        {
+            MenuPanel.FadeTo(0, 256);
+            MenuPanel.InputTransparent = true;
+        }
+
+        void OnSaveButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PushModalAsync(new SavedGameListPage());
+        }
+
+        void OnExitButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PopModalAsync();
         }
 
     }

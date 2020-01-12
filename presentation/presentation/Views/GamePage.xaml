@@ -7,27 +7,46 @@
              mc:Ignorable="d"
              x:Class="presentation.Views.GamePage">
     <ContentPage.Content>
-        <StackLayout>
-            
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Button x:Name="MenuButton" Text="{x:Static resources:PageTexts.Menu}"
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <StackLayout AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                        <Button x:Name="MenuButton" Text="{x:Static resources:PageTexts.Menu}"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
-                Clicked="OnMenuButtonClicked"  />
-                <Label Text="Welcome to Xamarin.Forms!"
+                Clicked="OnMenuButtonClicked" />
+                        <Label Text="Welcome to Xamarin.Forms!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+                    </StackLayout>
+
+                    <Button Text="3333"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                />
+                    <Button Text="4444"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                />
+                </StackLayout>
             </StackLayout>
-            <AbsoluteLayout x:Name="MenuPanel" AbsoluteLayout.LayoutBounds="0,32,200,96" IsVisible="False">
-                <Button Text="11111"
+            <AbsoluteLayout x:Name="MenuPanel" AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All" Opacity="0" InputTransparent="true">
+                <AbsoluteLayout.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPageClicked"/>
+                </AbsoluteLayout.GestureRecognizers>
+                <StackLayout>
+                    <Button Text="{x:Static resources:PageTexts.Save}"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
+                            Clicked="OnSaveButtonClicked"
                 />
-                <Button Text="22222"
+                    <Button Text="{x:Static resources:PageTexts.Exit}"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
+                            Clicked="OnExitButtonClicked"
                 />
+                </StackLayout>
             </AbsoluteLayout>
-        </StackLayout>
-    </ContentPage.Content>
+        </AbsoluteLayout>
+</ContentPage.Content>
 </ContentPage>

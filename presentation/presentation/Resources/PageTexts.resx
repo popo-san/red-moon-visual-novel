@@ -126,6 +126,9 @@
   <data name="Close" xml:space="preserve">
     <value>Close</value>
   </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
   <data name="Menu" xml:space="preserve">
     <value>Menu</value>
   </data>
@@ -155,5 +158,8 @@
   </data>
   <data name="ProjectTitle" xml:space="preserve">
     <value>Red Moon</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save Game</value>
   </data>
 </root>
