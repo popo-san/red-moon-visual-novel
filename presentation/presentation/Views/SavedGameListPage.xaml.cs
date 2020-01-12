@@ -14,9 +14,19 @@ namespace presentation.Views
     public partial class SavedGameListPage : ContentPage
     {
 
+        public SavedGameListPage(bool saveGameMode)
+        {
+            InitializeComponent();
+        }
+
         public SavedGameListPage()
         {
             InitializeComponent();
+        }
+
+        void OnCancelButtonClicked(object sender, EventArgs args)
+        {
+            Navigation.PopModalAsync();
         }
 
     }

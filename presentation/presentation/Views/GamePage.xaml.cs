@@ -33,7 +33,7 @@ namespace presentation.Views
 
         void OnSaveButtonClicked(object sender, EventArgs args)
         {
-            Navigation.PushModalAsync(new SavedGameListPage());
+            Navigation.PushModalAsync(new SavedGameListPage(true));
         }
 
         void OnExitButtonClicked(object sender, EventArgs args)
