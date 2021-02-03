@@ -23,7 +23,7 @@ namespace presentation
             InitializeComponent();
 
             MainPage = new TitlePage();
-        
+
         }
 
         protected override void OnStart()
@@ -52,4 +52,4 @@ namespace presentation
 
     }
 
-    }
+}

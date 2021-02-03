@@ -133,7 +133,7 @@ namespace presentation.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Copyright © 2020 Pneu Informatique.
+        ///   Looks up a localized string similar to Copyright © 2021 Pneu Informatique.
         /// </summary>
         internal static string ProjectCopyright {
             get {

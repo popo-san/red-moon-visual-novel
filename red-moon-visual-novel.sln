@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "presentation.Android", "pre
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "presentation.iOS", "presentation\presentation.iOS\presentation.iOS.csproj", "{92038CED-EDFB-4200-8DBA-9340AC02EB46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "presentation", "presentation\presentation\presentation.csproj", "{98D5D1C9-F69B-4CFE-A343-30A1A7E1895F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "presentation", "presentation\presentation\presentation.csproj", "{98D5D1C9-F69B-4CFE-A343-30A1A7E1895F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "core", "core\core.csproj", "{13D555A1-FDDA-4E1D-980A-24368F487064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "core", "core\core.csproj", "{13D555A1-FDDA-4E1D-980A-24368F487064}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,7 +40,6 @@ Global
 		{ED4D8396-E910-4F6A-BD72-E305A7CD4441}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{ED4D8396-E910-4F6A-BD72-E305A7CD4441}.Release|iPhoneSimulator.Deploy.0 = Release|Any CPU
 		{92038CED-EDFB-4200-8DBA-9340AC02EB46}.Debug|Any CPU.ActiveCfg = Debug|iPhoneSimulator
-		{92038CED-EDFB-4200-8DBA-9340AC02EB46}.Debug|Any CPU.Build.0 = Debug|iPhoneSimulator
 		{92038CED-EDFB-4200-8DBA-9340AC02EB46}.Debug|Any CPU.Deploy.0 = Debug|iPhoneSimulator
 		{92038CED-EDFB-4200-8DBA-9340AC02EB46}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{92038CED-EDFB-4200-8DBA-9340AC02EB46}.Debug|iPhone.Build.0 = Debug|iPhone

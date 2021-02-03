@@ -8,10 +8,27 @@
              x:Class="presentation.Views.SavedGameListPage">
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="{x:Static resources:PageTexts.Cancel}"
+            
+            <CollectionView x:Name="sessionList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <StackLayout>
+                            <Label Text="{Binding SessionID}" />
+                            <Label Text="{Binding SessionName}" />
+                        </StackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button x:Name="SaveButton" Text="{x:Static resources:PageTexts.Save}"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="Center"
+                Clicked="OnSaveButtonClicked" />
+                <Button Text="{x:Static resources:PageTexts.Cancel}"
                 VerticalOptions="CenterAndExpand"
                 HorizontalOptions="Center"
                 Clicked="OnCancelButtonClicked" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

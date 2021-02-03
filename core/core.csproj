@@ -5,10 +5,20 @@
     <Authors>Popo-san</Authors>
     <Company>Pneu Informatique</Company>
     <Product>Red Moon Visual Novel - Core</Product>
-    <Copyright>Copyright © 2020 Pneu Informatique</Copyright>
+    <Copyright>Copyright © 2021 Pneu Informatique</Copyright>
     <RepositoryUrl>https://github.com/pneu-informatique/red-moon-visual-novel</RepositoryUrl>
     <AssemblyName>redmoon.core</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="redmoon.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="redmoon.db">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
